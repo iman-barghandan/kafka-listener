@@ -37,6 +37,9 @@ public class KafkaConsumerConfig {
         configProps.put(
                 ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG,
                 JsonDeserializer.class);
+//        configProps.put(
+//                ConsumerConfig.GROUP_ID_CONFIG
+//        )
         return new DefaultKafkaConsumerFactory<>(configProps);
     }
 

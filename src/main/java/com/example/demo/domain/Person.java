@@ -11,6 +11,7 @@ public class Person {
     private Long id;
     private String name;
     private String lastname;
+    private Date sendDate;
     private Date listenDate;
 
     public Person(Long id, String name, String lastname, Date listenDate) {
@@ -23,6 +24,14 @@ public class Person {
     public Person() {
     }
 
+
+    public Date getSendDate() {
+        return sendDate;
+    }
+
+    public void setSendDate(Date sendDate) {
+        this.sendDate = sendDate;
+    }
 
     public Long getId() {
         return id;
