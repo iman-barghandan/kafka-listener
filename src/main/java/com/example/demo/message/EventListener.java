@@ -11,7 +11,7 @@ import java.util.Date;
 @Service
 public class EventListener {
 
-    @KafkaListener(topics = "person-register",containerFactory = "kafkaListenerContainerFactory")
+    @KafkaListener(topics = "person-register-topic",containerFactory = "kafkaListenerContainerFactory")
     public Person personRegisteredEventListener(Person person)
     {
         System.out.println("received");
